@@ -1,7 +1,7 @@
 <template>
     <section id="navbar">
         <div class="navbar-wrapper">
-            <div class="flex gap-4 w-5/12 lg:w-2/12">
+            <div class="flex gap-4 w-5/12 xl:w-2/12">
                 <img src="/logo.png">
                 <span>
                    <h1 class="main-title font-bold">BEM POLITEKNIK HASNUR</h1>
