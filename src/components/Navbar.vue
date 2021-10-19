@@ -1,7 +1,7 @@
 <template>
     <section id="navbar">
         <div class="navbar-wrapper">
-            <div class="flex gap-4 w-5/12 xl:w-2/12">
+            <div class="flex gap-4 w-5/12 xl:w-3/12">
                 <img src="/logo.png">
                 <span>
                    <h1 class="main-title font-bold">BEM POLITEKNIK HASNUR</h1>
@@ -9,7 +9,7 @@
                 </span>
             </div>
             <div class="ml-10">
-                <ul class="flex lg:gap-20 md:gap-5">
+                <ul class="flex xl:gap-16 md:gap-5">
                     <template v-for="(nav ,index) in navList" :key="index">
                         <li class="nav-link">{{ nav }}</li>
                     </template>      
