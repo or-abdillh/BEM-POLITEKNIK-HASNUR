@@ -1,15 +1,15 @@
 <template>
     <section id="navbar">
         <div class="navbar-wrapper">
-            <div class="flex gap-4 w-2/12">
-                <img src="/logo.png" alt="">
-                <div class="sm:hidden lg:block">
-                    <h1 class="main-title font-bold">BEM POLITEKNIK HASNUR</h1>
-                    <p class="sub-title text-sm">Kabinet Sinergi Koloborasi</p>
-                </div>
+            <div class="flex gap-4 w-5/12 lg:w-2/12">
+                <img src="/logo.png">
+                <span>
+                   <h1 class="main-title font-bold">BEM POLITEKNIK HASNUR</h1>
+                   <p class="sub-title text-sm">Kabinet Sinergi Koloborasi</p>
+                </span>
             </div>
             <div class="ml-10">
-                <ul class="flex lg:gap-20 md:gap-10">
+                <ul class="flex lg:gap-20 md:gap-5">
                     <template v-for="(nav ,index) in navList" :key="index">
                         <li class="nav-link">{{ nav }}</li>
                     </template>      
