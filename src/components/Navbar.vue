@@ -3,7 +3,7 @@
         <div class="navbar-wrapper">
             <div class="flex gap-4 w-2/12">
                 <img src="/logo.png" alt="">
-                <div class="">
+                <div class="sm:hidden lg:block">
                     <h1 class="main-title font-bold">BEM POLITEKNIK HASNUR</h1>
                     <p class="sub-title text-sm">Kabinet Sinergi Koloborasi</p>
                 </div>
