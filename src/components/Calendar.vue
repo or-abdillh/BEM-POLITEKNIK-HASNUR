@@ -29,14 +29,14 @@
          <h1>Kalender</h1>
       </template>
   </Title>
-   <section class="px-20 justify-center items-center flex gap-6">
+   <section class="w-10/12 mx-auto bg-white border p-10 rounded-xl border-gray-500 shadow-xl justify-center items-center flex gap-6">
       <div>
          <!-- component -->
          <div class="flex flex-grow flex-col bg-white sm:rounded overflow-hidden">
             <div class="mx-auto flex items-center gap-4">
-               <i class="fa fa-chevron-left text-2xl font-bold text-sunset"></i>
+               <i class="fa fa-chevron-left text-2xl font-bold text-white rounded-full px-2 flex justify-center items-center bg-sunset"></i>
                <h1 class="text-2xl font-bold">Oktober</h1>
-               <i class="fa fa-chevron-right text-2xl font-bold text-sunset"></i>
+               <i class="fa fa-chevron-right text-xl font-bold text-white rounded-full px-2 flex justify-center items-center bg-sunset"></i>
             </div>
             <div class="flex px-2 py-2 w-full mx-auto">
                <div class="flex flex-wrap bg-white overflow-hidden">
