@@ -108,11 +108,11 @@
                            <tr>
                               <td class="cell-style">30</td>
                               <td class="cell-style">31</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
+                              <td class="cell-disable">1</td>
+                              <td class="cell-disable">2</td>
+                              <td class="cell-disable">3</td>
+                              <td class="cell-disable">4</td>
+                              <td class="cell-disable">5</td>
                            </tr>
                         </table>
                      </div>
