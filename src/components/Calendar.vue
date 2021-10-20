@@ -29,7 +29,7 @@
          <h1>Kalender</h1>
       </template>
   </Title>
-   <section class="px-20 flex gap-6">
+   <section class="px-20 justify-center items-center flex gap-6">
       <div>
          <!-- component -->
          <div class="flex flex-grow flex-col bg-white sm:rounded overflow-hidden">

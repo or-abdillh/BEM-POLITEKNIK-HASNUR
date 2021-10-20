@@ -1,6 +1,6 @@
 <template>
    <!-- splidejs -->
-   <section class="px-1 xl:h-screen">
+   <section class="px-1">
       <Splide class="mt-40" :options="options">
          <SplideSlide>
             <div class="w-6/12 ml-24 my-40">

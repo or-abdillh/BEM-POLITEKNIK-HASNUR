@@ -1,7 +1,7 @@
 <template>
     <section id="about" class="bg-sunset relative">
         <div class="w-3/12">
-           <img src="/firtana.png" class="absolute w-3/12 bottom-0 left-0" />
+           <img src="/firtana.png" class="absolute w-3/12 lg:w-2/12 bottom-0 left-0" />
         </div>
         <div class="text-xl w-8/12">
             Lorem Ipsum is simply dummy text of the printing and
