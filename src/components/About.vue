@@ -1,5 +1,5 @@
 <template>
-    <section id="about">
+    <section id="about" class="bg-sunset">
         <div class="w-3/12">
             <small class="text-3xl">Tentang</small>
             <br>
@@ -42,23 +42,11 @@
             title: 'Agenda'
         }
     ])
-
-    console.log(sosmedNum.value)
-
 </script>
 
 <style scoped>
 
-    #about {
-        background: #114A82;
-        @apply px-20 py-28 text-gray-50 flex gap-20 items-center justify-between;
-    }
-
-    .text-color-1 {
-        color: #114A82;
-    }
-
-    .text-color-2 {
-        color: #FF5151
-    }
+   #about {
+      @apply px-20 py-28 text-gray-50 flex gap-20 items-center justify-between;
+   }
 </style>
