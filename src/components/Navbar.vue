@@ -5,12 +5,12 @@
                 <img src="/logo.png">
                 <span>
                    <h1 class="text-chatams font-bold">BEM POLITEKNIK HASNUR</h1>
-                   <p class="sub-title text-sm">Kabinet Sinergi Koloborasi</p>
+                   <p class="text-sunset text-sm">Kabinet Sinergi Koloborasi</p>
                 </span>
             </div>
             <div class="ml-10">
-                <ul class="flex xl:gap-16 md:gap-5">
-                     <li class="text-lg mb-6 text-chatams">Beranda</li> 
+                <ul class="flex xl:gap-16 md:gap-5 items-center">
+                     <router-link :to="{ name: 'home' }" class="text-lg mb-6 text-chatams">Beranda</router-link> 
                      <li class="text-lg mb-6">
                         <small class="flex items-center gap-2 text-chatams">
                            Tentang
@@ -30,6 +30,13 @@
 
    #navbar .navbar-wrapper {
      @apply z-10 bg-white fixed flex  top-0 left-0 right-0 p-10;
+   }
+   
+   /* Nav Active */
+   .router-link-active {
+      background: var(--chatams-blue);
+      color: white;
+      @apply px-4 rounded py-2;
    }
 
 </style>
