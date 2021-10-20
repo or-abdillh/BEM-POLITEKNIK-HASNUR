@@ -6,7 +6,7 @@
             </template>
         </Title>
         <div class="text-center">
-            <p class="text-sunset text-xl font-semibold">Info terbaru akan lebih update di media sosial Instagram kami ya sob!</p>
+            <p class="text-chatams text-xl font-semibold">Info terbaru akan lebih update di media sosial Instagram kami ya sob!</p>
             <img class="mx-auto mt-20" src="/phone.png" alt="">
             <CTA>
                <template v-slot:cta-title>Kunjungi instagram kami disini</template>

@@ -34,6 +34,10 @@
    
    /* Nav Active */
    .router-link-active {
+      border-bottom: 5px solid var(--sunset-orange);
+   }
+   
+   .router-link-active:hover {
       background: var(--chatams-blue);
       color: white;
       @apply px-4 rounded py-2;

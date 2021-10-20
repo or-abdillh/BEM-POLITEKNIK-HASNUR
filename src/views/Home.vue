@@ -3,7 +3,9 @@
    <About></About>
    <Calendar></Calendar>
    <Article></Article>
-<Medsos></Medsos>
+   <Medsos></Medsos>
+   <ContactUs></ContactUs>
+   <LatestVideo></LatestVideo>
 </template>
 
 <script setup>
@@ -13,5 +15,7 @@
    import Calendar from '../components/Calendar.vue'
    import Article from '../components/Article.vue'
    import Medsos from '../components/Medsos.vue'
+   import ContactUs from '../components/ContactUs.vue'
+   import LatestVideo from '../components/LatestVideo.vue'
 
 </script>
