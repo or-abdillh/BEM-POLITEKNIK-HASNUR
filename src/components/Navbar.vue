@@ -4,15 +4,22 @@
             <div class="flex gap-4 w-5/12 xl:w-3/12">
                 <img src="/logo.png">
                 <span>
-                   <h1 class="main-title font-bold">BEM POLITEKNIK HASNUR</h1>
+                   <h1 class="text-chatams font-bold">BEM POLITEKNIK HASNUR</h1>
                    <p class="sub-title text-sm">Kabinet Sinergi Koloborasi</p>
                 </span>
             </div>
             <div class="ml-10">
                 <ul class="flex xl:gap-16 md:gap-5">
-                    <template v-for="(nav ,index) in navList" :key="index">
-                        <li class="nav-link">{{ nav }}</li>
-                    </template>      
+                     <li class="text-lg mb-6 text-chatams">Beranda</li> 
+                     <li class="text-lg mb-6">
+                        <small class="flex items-center gap-2 text-chatams">
+                           Tentang
+                           <i class="fa fa-chevron-down"></i>
+                        </small>
+                     </li> 
+                     <li class="text-lg mb-6 text-chatams">Merch</li> 
+                     <li class="text-lg mb-6 text-chatams">BEM Info</li> 
+                     <li class="text-lg mb-6 text-chatams">Hubungi Kami</li> 
                 </ul>
             </div>
         </div>
@@ -21,30 +28,15 @@
 
 <style scoped>
 
-    #navbar .navbar-wrapper {
-        @apply z-10 bg-white fixed flex  top-0 left-0 right-0 p-10;
-    }
+   #navbar .navbar-wrapper {
+     @apply z-10 bg-white fixed flex  top-0 left-0 right-0 p-10;
+   }
 
-    #navbar .main-title {
-        color: #114A82;
-    }
-
-    #navbar .sub-title {
-        color: #FF5151;
-    }
-
-    #navbar .nav-link {
-        @apply text-lg mb-6;
-        color: #124B83;
-    }
 </style>
 
 <script setup>
 
-    import { ref } from 'vue'
-
-    //Navbar list
-    const navList = ref(['Beranda', 'Tentang', 'Merch', 'Aspirasi Mahasiswa', 'Artikel', 'Hubungi Kami'])
-
-    console.log('hello')
+   import { ref } from 'vue'
+   
+   const currentTab = ref('Beranda')
 </script>

@@ -1,0 +1,24 @@
+/*
+- Colors for background
+- Colors for text color
+*/
+:root {
+   --sunset-orange: #FF5151;
+   --chatams-blue: #114A82;
+}
+
+.bg-sunset {
+   background: var(--sunset-orange);
+}
+
+.text-sunset {
+   color: var(--sunset-orange);
+}
+
+.bg-chatams {
+   background: var(--chatams-blue);
+}
+
+.text-chatams {
+   color: var(--chatams-blue);
+}
