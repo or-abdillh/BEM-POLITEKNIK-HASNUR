@@ -6,28 +6,13 @@
             </template>
         </Title>
         <div class="text-center">
-            <p class="text-color-1 font-semibold">Info terbaru akan lebih update di media sosial Instagram kami ya sob!</p>
+            <p class="text-sunset font-semibold">Info terbaru akan lebih update di media sosial Instagram kami ya sob!</p>
             <img class="mx-auto mt-20" src="/phone.png" alt="">
-            <button type="button" class="bg-color-1 text-gray-50 px-10 py-3 rounded-2xl mt-10 font-semibold">Kunjungi Instagram kami disini!</button> 
+            <button type="button" class="bg-sunset text-gray-50 px-10 py-3 rounded-2xl mt-10 font-semibold">Kunjungi Instagram kami disini!</button> 
         </div>
     </section>
 </template>
 
 <script setup>
-
-    import Title from './Title.vue'
-
-
+   import Title from './Title.vue'
 </script>
-
-<style scoped>
-
-    .text-color-1 {
-        color: #114A82;
-    }
-
-    .bg-color-1 {
-        background: #114A82;
-    }
-
-</style>
