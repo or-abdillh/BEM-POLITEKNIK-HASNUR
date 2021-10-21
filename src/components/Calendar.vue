@@ -29,7 +29,7 @@
          <h1>Kalender</h1>
       </template>
   </Title>
-   <section class="w-10/12 mx-auto bg-white border p-10 rounded-xl border-gray-500 shadow-xl justify-center items-center flex gap-6">
+   <section class="w-10/12 mx-auto bg-white border p-10 rounded-xl border-gray-500 shadow-xl justify-center xl:gap-20 items-center flex gap-6">
       <div>
          <!-- component -->
          <div class="flex flex-grow flex-col bg-white sm:rounded overflow-hidden">

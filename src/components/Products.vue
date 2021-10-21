@@ -16,7 +16,7 @@
                Merchandise kami akan selalu update di Halaman ini, pembeliannya via Shoppee ya sob! 
             </p>
             <!-- Card wrapper -->
-            <section class="flex gap-10 mt-20">
+            <section class="flex justify-bettween gap-10 mt-20">
                <template v-for="(merch, index) in merchants" :key="index">
                   <!-- Card -->
                   <div>
