@@ -13,7 +13,7 @@
                <h1 class="text-5xl text-chatams text-color-1 font-bold">Selamat datang di Website <br> BEM POLIHASNUR!</h1>
                <p class="text-3xl text-sunset mt-4 text-color-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <img class="absolute lg:-bottom-10 right-0 bottom-0 w-7/12" src="/caraousel-1.png" alt="caraousel-1">
+            <img class="absolute lg:-bottom-10 right-0 bottom-0 w-7/12 lg:w-6/12 xl:w-5/12" src="/caraousel-1.png" alt="caraousel-1">
          </SplideSlide>
          <SplideSlide>
             <div class="w-6/12 ml-24 mt-40">
@@ -27,7 +27,7 @@
                <h1 class="text-5xl text-chatams text-color-1 font-bold">Kamu mau curhat?</h1>
                <p class="text-3xl text-sunset mt-4 text-color-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <img class="absolute lg:bottom-2/4 -bottom-44 left-0 right-0 w-full" src="/caraousel-3.png" alt="Sample 1">
+            <img class="absolute -bottom-44 left-0 right-0 w-full" src="/caraousel-3.png" alt="Sample 1">
          </SplideSlide>
       </Splide>
    </section>
