@@ -67,7 +67,7 @@
       
       <!-- Artikel -->
       <div class="text-gray-50 w-4/12">
-         <h1 class="text-3xl footer-title">Link Cepat</h1>
+         <h1 class="text-3xl footer-title">Artikel</h1>
          <ul>
             <li class="mb-4">
                <router-link class="font-semibold" to="">Dokumenter PKKMB POLITEKNIK HASNUR 2021</router-link>
