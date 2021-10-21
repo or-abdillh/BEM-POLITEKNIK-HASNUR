@@ -10,16 +10,18 @@
             </div>
             <div class="ml-10">
                 <ul class="flex xl:gap-16 md:gap-5 items-center">
-                     <router-link :to="{ name: 'home' }" class="text-lg mb-6 text-chatams">Beranda</router-link> 
-                     <li class="text-lg mb-6">
-                        <small class="flex items-center gap-2 text-chatams">
-                           Tentang
-                           <i class="fa fa-chevron-down"></i>
-                        </small>
-                     </li> 
-                     <li class="text-lg mb-6 text-chatams">Merch</li> 
-                     <li class="text-lg mb-6 text-chatams">BEM Info</li> 
-                     <li class="text-lg mb-6 text-chatams">Hubungi Kami</li> 
+                  <li class="link">
+                     <router-link :to="{ name: 'home' }">Beranda</router-link> 
+                  </li>
+                  <li class="link">
+                     <small class="flex items-center gap-2">
+                        Tentang
+                        <i class="fa fa-chevron-down"></i>
+                     </small>
+                  </li> 
+                  <li class="link">Merch</li> 
+                  <li class="link">BEM Info</li> 
+                  <li class="link">Hubungi Kami</li> 
                 </ul>
             </div>
         </div>
@@ -37,7 +39,12 @@
       border-bottom: 5px solid var(--sunset-orange);
    }
    
-   .router-link-active:hover {
+   .link {
+      @apply text-lg mb-6;
+      color: var(--chatams-blue);
+   }
+   
+   .link:hover {
       background: var(--chatams-blue);
       color: white;
       @apply px-4 rounded py-2;

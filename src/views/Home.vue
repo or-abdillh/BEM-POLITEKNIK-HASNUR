@@ -6,6 +6,7 @@
    <Medsos></Medsos>
    <ContactUs></ContactUs>
    <LatestVideo></LatestVideo>
+   <Products></Products>
 </template>
 
 <script setup>
@@ -17,5 +18,6 @@
    import Medsos from '../components/Medsos.vue'
    import ContactUs from '../components/ContactUs.vue'
    import LatestVideo from '../components/LatestVideo.vue'
+   import Products from '../components/Products.vue'
 
 </script>
