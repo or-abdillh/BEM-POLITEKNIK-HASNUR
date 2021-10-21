@@ -7,6 +7,7 @@
    <ContactUs></ContactUs>
    <LatestVideo></LatestVideo>
    <Products></Products>
+   <Footer></Footer>
 </template>
 
 <script setup>
@@ -19,5 +20,6 @@
    import ContactUs from '../components/ContactUs.vue'
    import LatestVideo from '../components/LatestVideo.vue'
    import Products from '../components/Products.vue'
+   import Footer from '../components/Footer.vue'
 
 </script>
