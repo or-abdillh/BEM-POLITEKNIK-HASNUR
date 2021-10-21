@@ -7,6 +7,12 @@
       height: 45vh;
    }
    
+   @media screen(lg) {
+      .slide-wrapper {
+         height: 100vh;
+      }
+   } 
+   
    .slide {
       @apply w-6/12 top-2/4 absolute left-20;
       transform: translateY(-50%);
