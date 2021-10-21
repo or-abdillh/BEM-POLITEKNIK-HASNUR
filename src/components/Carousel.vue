@@ -9,7 +9,7 @@
    
    @media screen(lg) {
       .slide-wrapper {
-         height: 70vh;
+         height: 100vh;
       }
    } 
    

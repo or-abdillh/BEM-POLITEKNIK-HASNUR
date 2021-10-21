@@ -47,10 +47,4 @@
    .about {
       @apply px-20 py-20 text-gray-50 flex gap-10 items-center justify-between;
    }
-   
-   @media screen(lg) {
-      .about {
-         height: 30vh;
-      }
-   }
 </style>
