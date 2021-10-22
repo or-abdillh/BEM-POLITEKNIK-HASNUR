@@ -51,14 +51,13 @@
    }
    
    .link {
-      @apply text-lg mb-6;
+      @apply text-lg mb-6 px-4 rounded py-2;
       color: var(--chatams-blue);
    }
    
    .link:hover {
       background: var(--chatams-blue);
       color: white;
-      @apply px-4 rounded py-2;
    }
    
    .link:hover .router-link-active {

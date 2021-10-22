@@ -1,6 +1,7 @@
 <style scoped>
    .footer-title {
       @apply mb-6;
+      text-underline-offset: 8p;
       text-decoration: underline var(--sunset-orange) 6px;
    }
    
