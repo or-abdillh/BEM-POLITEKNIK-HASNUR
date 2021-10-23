@@ -1,13 +1,8 @@
 <template>
-   <section class="mt-36 lg:mt-18 relative">
-      <img class="w-full" src="/article-cover.jpg" />
-      <div class="bg-gray-900 absolute inset-0 bg-opacity-25 flex items-center justify-center">
-         <div class="text-white text-center">
-            <h1 class="text-6xl mb-3 font-semibold">BEM Info</h1>
-            <p class="text-2xl">Seputar informasi tentang kampus Politeknik Hasnur   </p>
-         </div>
-      </div>
-   </section>
+   <Cover 
+   img="/article-cover.jpg" title="BEM Info"
+   sub-title="Seputar informasi tentang kampus Politeknik Hasnur">
+   </Cover>
    <Calendar>
       <template v-slot:sub-title>
          <p class="mb-5 text-chatams text-xl font-semibold px-20 text-center">
@@ -45,6 +40,7 @@
    import Footer from '../components/Footer.vue'
    import Title from '../components/Title.vue'
    import Calendar from '../components/Calendar.vue'
+   import Cover from '../components/Cover.vue'
    
    import { ref } from 'vue'
    

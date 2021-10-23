@@ -35,7 +35,9 @@
                   <li class="link" @click="dropDown = false">
                      <router-link :to="{ name: 'info' }">BEM INFO</router-link>
                   </li> 
-                  <li class="link" @click="dropDown = false">Hubungi Kami</li> 
+                  <li class="link" @click="dropDown = false">
+                     <router-link :to="{ name: 'contactUs' }">Hubungi Kami</router-link>
+                  </li> 
                 </ul>
             </div>
         </div>

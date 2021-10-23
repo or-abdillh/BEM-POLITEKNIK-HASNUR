@@ -1,13 +1,8 @@
 <template>
-   <section class="mt-36 lg:mt-18 relative">
-      <img class="w-full" src="/merch-cover.jpg" />
-      <div class="bg-gray-900 absolute inset-0 bg-opacity-25 flex items-center justify-center">
-         <div class="text-white text-center">
-            <h1 class="text-6xl mb-3 font-semibold">Merchandise</h1>
-            <p class="text-2xl">Merchandise resmi dari kami untuk rakyat Indonesia!</p>
-         </div>
-      </div>
-   </section>
+   <Cover 
+   img="/merch-cover.jpg" title="Merchandise"
+   sub-title="Merchandise resmi dari kami untuk rakyat Indonesia!">
+   </Cover>
    <Title>
       <template v-slot:title>
          <h1>Latest Product</h1>
@@ -40,6 +35,7 @@
 
    import Footer from '../components/Footer.vue'
    import Title from '../components/Title.vue'
+   import Cover from '../components/Cover.vue'
    
    import { ref } from 'vue'
    const merchants = ref([
@@ -63,27 +59,5 @@
            img: '/merch-4.jpg',
            price: 90000
         }
-      ])
-   
-   //Seputar informasi tentang kampus Politeknik Hasnur   
-   const articles = ref([
-         {
-            title: 'PKKMB politeknik hasnur 2021 akan dilaksanakan secara hybrid',
-            date: 'Minggu, 12 September 2021',
-            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
-            poster: 'article-1.jpg'
-         },
-         {
-            title: 'PKKMB politeknik hasnur dilaksanakan dengan lancar',
-            date: 'Rabu, 15 September 2021',
-            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
-            poster: 'article-2.jpg'
-         },
-         {
-            title: 'dokumenter PKKMB politkenik hasnur 2021',
-            date: 'Senin, 20 September 2021',
-            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
-            poster: 'article-3.jpg'
-         }
       ])
 </script>
