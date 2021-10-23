@@ -1,36 +1,40 @@
 <template>
    <section class="mt-36 lg:mt-18 relative">
-      <img class="w-full" src="/merch-cover.jpg" />
+      <img class="w-full" src="/article-cover.jpg" />
       <div class="bg-gray-900 absolute inset-0 bg-opacity-25 flex items-center justify-center">
          <div class="text-white text-center">
-            <h1 class="text-6xl mb-3 font-semibold">Merchandise</h1>
-            <p class="text-2xl">Merchandise resmi dari kami untuk rakyat Indonesia!</p>
+            <h1 class="text-6xl mb-3 font-semibold">BEM Info</h1>
+            <p class="text-2xl">Seputar informasi tentang kampus Politeknik Hasnur   </p>
          </div>
       </div>
    </section>
+   <Calendar>
+      <template v-slot:sub-title>
+         <p class="mb-5 text-chatams text-xl font-semibold px-20 text-center">
+            Jangan sampai kelewatan event - event dari kami!
+         </p>
+      </template>
+   </Calendar>
    <Title>
       <template v-slot:title>
-         <h1>Latest Product</h1>
+         <h1>Artikel</h1>
       </template>
    </Title>
    <p class="mb-5 text-chatams text-xl font-semibold px-20 text-center">
-      Merchandise kami akan selalu update di Halaman ini, pembeliannya via Shoppee ya sob!
+      Seputar informasi tentang kampus Politeknik Hasnur   
    </p>
-   <!-- Card wrapper -->
-   <section class="px-20 flex flex-wrap w-full mb-16 mx-auto justify-between gap-10 lg:gap-16 mt-20">
-      <template v-for="(merch, index) in merchants" :key="index">
+   <!-- Articles -->
+   <section class="w-full px-20 mt-10">
+      <template v-for="(article, index) in articles" :key="index">
          <!-- Card -->
-         <div class="w-5/12">
-            <div class="rounded-2xl shadow-lg relative overflow-hidden">
-               <img :src="merch.img" class="w-full" :alt="merch.title" />
-               <div class="bg-gray-900 text-center text-xl font-semibold text-gray-50 layer absolute left-0 bg-opacity-50 right-0 bottom-0 py-3 px-2">
-                  BEM POLITEKNIK HASNUR {{ merch.title }}
-               </div>
+         <div class="flex justify-center items-center gap-10 mb-20">
+            <img :src="article.poster" class="w-5/12 rounded-3xl shadow" />
+            <div class="text-chatams">
+               <h1 class="font-bold">{{ article.title.toUpperCase() }}</h1>
+               <p class="mt-2 font-light">{{ article.date }}</p>
+               <p class="mt-4 mb-5 font-medium">{{ article.description }}</p>
+               <router-link to="" class="text-chatams">Read more</router-link>
             </div>
-            <!-- Button -->
-            <button class="hover:bg-red-500 duration-300 bg-chatams shadow-lg text-gray-50 w-full rounded-xl mt-5 py-2 text-2xl" type="button">
-               Rp {{ merch.price.toLocaleString() }}
-            </button>
          </div>
       </template>
    </section>
@@ -40,32 +44,10 @@
 
    import Footer from '../components/Footer.vue'
    import Title from '../components/Title.vue'
+   import Calendar from '../components/Calendar.vue'
    
    import { ref } from 'vue'
-   const merchants = ref([
-        {
-           title: 'T-SHIRT',
-           img: '/merch-1.jpg',
-           price: 110000
-        },
-        {
-           title: 'TOTE-BAG',
-           img: '/merch-2.jpg',
-           price: 120000
-        },
-        {
-           title: 'BASEBALL CAP',
-           img: '/merch-3.jpg',
-           price: 80000
-        },
-        {
-           title: 'MUG',
-           img: '/merch-4.jpg',
-           price: 90000
-        }
-      ])
    
-   //Seputar informasi tentang kampus Politeknik Hasnur   
    const articles = ref([
          {
             title: 'PKKMB politeknik hasnur 2021 akan dilaksanakan secara hybrid',

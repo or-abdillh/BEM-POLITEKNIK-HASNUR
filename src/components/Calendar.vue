@@ -29,6 +29,9 @@
          <h1>Kalender</h1>
       </template>
   </Title>
+  <slot name="sub-title">
+     
+  </slot>
    <section class="w-10/12 mx-auto bg-white border p-10 rounded-xl border-gray-500 shadow-xl justify-center xl:gap-20 items-center flex gap-6">
       <div>
          <!-- component -->
