@@ -21,6 +21,7 @@
          <template v-slot:cta-title>Submit pertanyaan kamu disini</template>
       </CTA>
    </section>
+   <GoogleMap></GoogleMap>
    <Footer></Footer>
 </template>
 
@@ -38,6 +39,7 @@
    import Title from '../components/Title.vue'
    import Cover from '../components/Cover.vue'
    import CTA from '../components/CTA.vue'
+   import GoogleMap from '../components/GoogleMap.vue'
    import { ref } from 'vue'
    
    const form = ref({
