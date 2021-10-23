@@ -23,12 +23,15 @@
    <!-- splidejs -->
    <section class="px-1 mt-20 lg:mt-10">
       <Splide :options="options">
+         <button type="button" class="splide__arrow splide__arrow--prev">
+            <i class="fa fa-chevron-left"></i>
+         </button>
          <SplideSlide class="slide-wrapper lg:h-screen relative">
             <div class="slide">
                <h1 class="text-5xl text-chatams text-color-1 font-bold">Selamat datang di Website <br> BEM POLIHASNUR!</h1>
                <p class="text-3xl text-sunset mt-4 text-color-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <img class="absolute lg:-bottom-10 right-0 bottom-0 w-7/12 lg:w-6/12" src="/caraousel-1.png" alt="caraousel-1">
+            <img class="absolute lg:-bottom-10 right-0 bottom-0 w-7/12 lg:w-6" src="/caraousel-1.png" alt="caraousel-1">
          </SplideSlide>
          <SplideSlide class="slide-wrapper">
             <div class="slide">
