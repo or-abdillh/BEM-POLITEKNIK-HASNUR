@@ -32,7 +32,7 @@
    
    //Read handler
    const read = index => {
-      router.push({ name: 'artikel', params: { id: `article-${index + 1}` } })
+      router.push({ name: 'artikel' })
    }
    
    const articles = ref([
