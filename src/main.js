@@ -5,7 +5,8 @@ import VueSplide from '@splidejs/vue-splide'
 
 import './index.css'
 import '@splidejs/splide/dist/css/splide.min.css'
-import './style/reset.css'
+import './style/app.css'
+import './style/colors.css'
 
 createApp(App)
     .use(router)

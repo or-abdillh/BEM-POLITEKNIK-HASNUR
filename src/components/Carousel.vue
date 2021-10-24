@@ -23,9 +23,6 @@
    <!-- splidejs -->
    <section class="px-1 mt-20 lg:mt-10">
       <Splide :options="options">
-         <button type="button" class="splide__arrow splide__arrow--prev">
-            <i class="fa fa-chevron-left"></i>
-         </button>
          <SplideSlide class="slide-wrapper lg:h-screen relative">
             <div class="slide">
                <h1 class="text-5xl text-chatams text-color-1 font-bold">Selamat datang di Website <br> BEM POLIHASNUR!</h1>

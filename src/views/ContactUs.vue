@@ -79,17 +79,3 @@
    }
    
 </script>
-
-<style scoped>
-   @keyframes show {
-      from {
-         transform: scale(.75) translateX(-80%);
-      } to {
-         transform: scale(1) translateX(0);
-      }
-   }
-   
-   .show {
-      animation: show .3s forwards;
-   }
-</style>

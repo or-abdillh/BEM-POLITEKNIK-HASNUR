@@ -45,7 +45,7 @@
 </template>
 
 <style scoped>
-
+   
    #navbar .navbar-wrapper {
      @apply z-10 fixed flex bg-white top-0 left-0 right-0 p-10;
    }

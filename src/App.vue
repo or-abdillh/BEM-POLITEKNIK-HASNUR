@@ -8,10 +8,3 @@
    import Navbar from './components/Navbar.vue'
    
 </script>
-
-<style>
-   
-   @import './style/colors.css';
-   @import './style/reset.css';
-   
-</style>
