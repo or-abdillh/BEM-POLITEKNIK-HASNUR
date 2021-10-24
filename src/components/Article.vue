@@ -11,7 +11,7 @@
                     <img class="w-full" :src="card.poster">
                     <div class="absolute inset-0 bg-gray-900 bg-opacity-25">
                         <div class="z-10 px-6 absolute bottom-10 text-gray-50">
-                           <h1 class="text-xl font-semibold">{{ card.title.toUpperCase() }}</h1>
+                           <h1 @click="read(index)" class="text-xl font-semibold">{{ card.title.toUpperCase() }}</h1>
                            <p>{{ card.date }}</p>
                         </div>
                     </div>
@@ -25,6 +25,15 @@
 
    import Title from './Title.vue'
    import { ref } from 'vue'
+   import { useRouter } from 'vue-router'
+   
+   //Init router
+   const router = useRouter()
+   
+   //Read handler
+   const read = index => {
+      router.push({ name: 'artikel', params: { id: `article-${index + 1}` } })
+   }
    
    const articles = ref([
          {

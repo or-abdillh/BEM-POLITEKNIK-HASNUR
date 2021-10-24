@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Merchants from '../views/Merchants.vue'
 import Info from '../views/Info.vue'
 import ContactUs from '../views/ContactUs.vue'
+import Article from '../views/Article.vue'
 
 const routes = [
 	{
@@ -24,6 +25,11 @@ const routes = [
 	   path: '/contact-us',
 	   name: 'contactUs',
 	   component: ContactUs
+	},
+	{
+	   path: '/artikel',
+	   name: 'artikel',
+	   component: Article
 	}
 ]
 //createRouter
