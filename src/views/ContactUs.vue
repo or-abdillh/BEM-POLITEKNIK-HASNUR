@@ -17,7 +17,8 @@
          <input v-model="form.nomor" type="text" class="input-form" placeholder="Tuliskan nomor kamu disini" />
       </div>
       <textarea v-model="form.pesan" class="input-form" rows="12" cols="40" placeholder="Tuliskan pesan kamu disini"></textarea>
-      <CTA>
+      <p class="text-center text-red-600 mt-3">{{ errorMsg }}</p>
+      <CTA @click="validation()">
          <template v-slot:cta-title>Submit pertanyaan kamu disini</template>
       </CTA>
    </section>
@@ -40,11 +41,26 @@
    import Cover from '../components/Cover.vue'
    import CTA from '../components/CTA.vue'
    import GoogleMap from '../components/GoogleMap.vue'
-   import { ref } from 'vue'
+   import { ref, reactive } from 'vue'
    
-   const form = ref({
+   //V model
+   const form = reactive({
       email: '',
       nomor: '',
       pesan: ''
    })
+   
+   //Error message
+   const errorMsg = ref('')
+   
+   //Validation form
+   const validation = () => {
+      if ( form.email === '' ) errorMsg.value = 'Anda lupa menginput email'
+      else if ( form.nomor === '' ) errorMsg.value = 'Anda lupa menginput nomor'
+      else if ( form.pesan === '' ) errorMsg.value = 'Anda lupa menginput pesan anda'
+      else {
+         
+      }
+   }
+   
 </script>
