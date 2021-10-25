@@ -20,12 +20,12 @@
                         Tentang
                         <i class="fa duration-300" :class="dropDown ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                      </small>
-                     <ul v-if="dropDown" class="duration-300 absolute left-0 right-0 -bottom-full rounded p-2 bg-chatams text-gray-50 text-xxs">
-                        <li class="py-0">
-                           BEM Polihasnur
+                     <ul v-if="dropDown" class="dropdown bg-chatams">
+                        <li class="py-0 mb-3">
+                           <router-link to="">BEM Polihasnur</router-link>
                         </li>
-                        <li class="py-0">
-                           Struktur Pengurus
+                        <li class="py-0 mb-2">
+                           <router-link to="">Struktur Anggota</router-link>
                         </li>
                      </ul>
                   </li> 
@@ -75,10 +75,14 @@
    }
    
    .text-xxs {
-      font-size: .55rem;
-      line-height: 1.25rem;
       text-decoration: underline white;
       text-underline-offset: 5px;
+   }
+   
+   .dropdown {
+      @apply duration-300 absolute left-0 right-0 top-full rounded py-2 px-3 text-gray-50 text-sm text-xxs;
+      transform: translateY(-5px);
+      width: 150%;
    }
 
 </style>
