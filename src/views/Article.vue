@@ -26,17 +26,58 @@
       </template>
    </Carousel>
    <!-- Content -->
-   <section class="px-16 my-10">
+   <section class="px-16 mt-10 mb-20">
       <p class="leading-relaxed text-chatams text-3xl">
          PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si., M.P. selaku direktur Politeknik Hasnur, dalam laporannya PKKMB tahun ini dilaksanakan 3 hari ini secara hybrid yaitu 1 hari online dan 2 hari offline dengan harapan untuk mencegah penularan Covid-19 dan agar kegiatan tersebut dapat berjalan dengan baik dan semaksimal mungkin.
       </p>
-   <Writer></Writer>
+      <Writer></Writer>
    </section>
+   <!-- Artikel lainnya -->
+   <section class="px-16 mb-10">
+      <div class="flex items-center justify-between">
+         <h1 class="text-5xl font-black">Artikel lainnya</h1>
+         <hr class="line-singgle" />
+      </div>
+      <!-- Articles -->
+      <section class="w-full mt-10">
+         <template v-for="(article, index) in articles" :key="index">
+            <!-- Card -->
+            <div class="flex items-start gap-10">
+               <img :src="article.poster" class="rounded-3xl shadow w-5/12 shadow mb-10" />
+               <div class="">
+                  <h1 class="font-bold text-chatams text-2xl">{{ article.title.toUpperCase() }}</h1>
+                  <p class="text-chatams text-xl font-light">{{ article.date }}</p>
+                  <p class="text-xl my-4 text-chatams font-medium">{{ article.description }}</p>
+                  <router-link :to="{ name: 'artikel' }" class="text-chatams text-xl">Read more</router-link>
+               </div>
+            </div>
+         </template>
+      </section>
+   </section>
+   <Footer></Footer>
 </template>
 
 <script setup>
    
+   import Footer from '../components/Footer.vue'
    import Carousel from '../components/Carousel.vue'
    import Writer from '../components/Writer.vue'
+   
+   import { ref } from 'vue'
+   
+   const articles = ref([
+         {
+            title: 'PKKMB politeknik hasnur dilaksanakan dengan lancar',
+            date: 'Rabu, 15 September 2021',
+            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
+            poster: 'article-2.jpg'
+         },
+         {
+            title: 'dokumenter PKKMB politkenik hasnur 2021',
+            date: 'Senin, 20 September 2021',
+            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
+            poster: 'article-3.jpg'
+         }
+      ])
    
 </script>

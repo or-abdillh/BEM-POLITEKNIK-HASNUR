@@ -12,6 +12,18 @@
    font-family: "Poppins", Sans-Serif;
 }
 
+.line {
+   @apply bg-red-400 w-4/12 rounded;
+   color: #FF5151;
+   height: 6px;
+}
+
+.line-singgle {
+   @apply bg-red-400 w-8/12 rounded;
+   color: #FF5151;
+   height: 6px;
+}
+
 @keyframes show {
    from {
       transform: scale(.75) translateX(-80%);
@@ -41,3 +53,4 @@
      rgba(0, 0, 0, .8)
    );
 }
+

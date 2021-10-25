@@ -5,7 +5,7 @@
                 <h1>Artikel</h1>
             </template>
         </Title>
-        <div class="mt-16 px-16 flex gap-10 justify-between">
+        <section class="mt-16 px-16 flex gap-10 justify-between">
             <template v-for="(card, index) in articles" :key="index">
                 <div class="overflow-hidden rounded-3xl shadow-xl relative">
                     <img class="w-full" :src="card.poster">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </template>
-        </div>
+        </section>
     </section>
 </template>
 
