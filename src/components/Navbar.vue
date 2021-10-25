@@ -58,7 +58,7 @@
    }
    
    .link {
-      @apply text-lg mb-6 px-4 rounded py-2 flex items-center;
+      @apply text-lg px-4 rounded py-2 flex items-center;
       color: var(--chatams-blue);
    }
    
