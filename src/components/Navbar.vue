@@ -16,12 +16,12 @@
            </li>
            <li class="link relative" :class="dropDown ? 'bg-chatams' : ''">
               <small :class="dropDown ? 'text-gray-50' : ''" @click="dropDown = !dropDown" class="flex items-center gap-2">
-                  Tentang
+                  <p :class="isTentangRoute ? 'router-link-active' : ''">Tentang</p>
                   <i class="fa duration-300" :class="dropDown ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                </small>
                <ul v-if="dropDown" class="dropdown bg-chatams">
                   <li class="py-0 mb-3">
-                     <router-link to="">BEM Polihasnur</router-link>
+                     <router-link :to="{ name: 'tentang' }">BEM Polihasnur</router-link>
                   </li>
                   <li class="py-0 mb-2">
                      <router-link to="">Struktur Anggota</router-link>
@@ -32,7 +32,7 @@
              <router-link :to="{ name: 'merchants' }">Merch</router-link>
            </li>
            <li class="link">
-             <router-link :class="isCurrentRoute ? 'router-link-active' : ''"  :to="{ name: 'info' }">BEM INFO</router-link>
+             <router-link :class="isInfoRoute ? 'router-link-active' : ''"  :to="{ name: 'info' }">BEM INFO</router-link>
            </li>
            <li class="link">
              <router-link :to="{ name: 'contactUs' }">Hubungi Kami</router-link>
@@ -58,7 +58,7 @@
    }
    
    .link {
-      @apply text-lg px-4 rounded py-2 flex items-center;
+      @apply text-lg px-4 py-2 flex items-center;
       color: var(--chatams-blue);
    }
    
@@ -100,8 +100,14 @@
    const currentRoute = computed(() => route.name)
    
    //If currentRoute === artikel atau info
-   const isCurrentRoute = computed(() => {
+   const isInfoRoute = computed(() => {
       if ( currentRoute.value === 'artikel' || currentRoute.value === 'info' ) return true
+      else return false
+   })
+   
+   //If currentRoute === tentang atau struktur
+   const isTentangRoute = computed(() => {
+      if ( currentRoute.value === 'tentang' || currentRoute.value === 'struktur' ) return true
       else return false
    })
    

@@ -24,6 +24,15 @@
    </Carousel>
    
    <About></About>
+   <!-- MEDSOS COUNT -->
+   <section class="bg-white p-20 mt-0 flex justify-between">
+        <template v-for="(item, index) in sosmedNum" :key="index">
+            <div class="text-5xl text-center font-bold">
+                <h1 class="text-sunset">{{ item.num }}</h1>
+                <h1 class="text-chatams">{{ item.title }}</h1>
+            </div>
+        </template>
+    </section>
    <Calendar></Calendar>
    <Article></Article>
    <Medsos></Medsos>
@@ -44,5 +53,21 @@
    import LatestVideo from '../components/LatestVideo.vue'
    import Products from '../components/Products.vue'
    import Footer from '../components/Footer.vue'
+   
+   import { ref } from 'vue'
 
+    const sosmedNum = ref([
+        {
+            num: 49,
+            title: 'Subscriber'
+        },
+        {
+            num: 1299,
+            title: 'Followers'
+        },
+        {
+            num: 30,
+            title: 'Agenda'
+        }
+    ])
 </script>
