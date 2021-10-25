@@ -28,3 +28,7 @@
    @apply w-6/12 top-2/4 absolute left-20;
    transform: translateY(-50%);
 }
+
+.slide-bottom {
+   @apply w-10/12 top-2/4 absolute left-20
+}
