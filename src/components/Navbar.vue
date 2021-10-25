@@ -15,12 +15,12 @@
                      <router-link :to="{ name: 'home' }">Beranda</router-link> 
                   </li>
                   <!-- dropdown -->
-                  <li class="link relative">
-                     <small @click="dropDown = !dropDown" class="flex items-center gap-2">
+                  <li class="link relative" :class="dropDown ? 'bg-chatams' : ''">
+                     <small :class="dropDown ? 'text-gray-50' : ''" @click="dropDown = !dropDown" class="flex items-center gap-2">
                         Tentang
                         <i class="fa duration-300" :class="dropDown ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                      </small>
-                     <ul v-if="dropDown" class="duration-300 absolute left-0 right-0 top-full rounded p-2 bg-chatams text-gray-50 text-xxs">
+                     <ul v-if="dropDown" class="duration-300 absolute left-0 right-0 -bottom-full rounded p-2 bg-chatams text-gray-50 text-xxs">
                         <li class="py-0">
                            BEM Polihasnur
                         </li>
@@ -33,7 +33,7 @@
                      <router-link :to="{ name: 'merchants' }">Merch</router-link>
                   </li> 
                   <li class="link" @click="dropDown = false">
-                     <router-link :to="{ name: 'info' }">BEM INFO</router-link>
+                     <router-link :class="isCurrentRoute ? 'router-link-active' : ''"  :to="{ name: 'info' }">BEM INFO</router-link>
                   </li> 
                   <li class="link" @click="dropDown = false">
                      <router-link :to="{ name: 'contactUs' }">Hubungi Kami</router-link>
@@ -61,6 +61,10 @@
       color: var(--chatams-blue);
    }
    
+   .link:active {
+      background: var(--chatams-blue);
+   }
+   
    .link:hover {
       background: var(--chatams-blue);
       color: white;
@@ -81,7 +85,20 @@
 
 <script setup>
 
-   import { ref } from 'vue'
+   import { ref, computed } from 'vue'
+   import { useRoute } from 'vue-router'
+   
+   //Init route
+   const route = useRoute()
+   
+   //Get current route name
+   const currentRoute = computed(() => route.name)
+   
+   //If currentRoute === artikel atau info
+   const isCurrentRoute = computed(() => {
+      if ( currentRoute.value === 'artikel' || currentRoute.value === 'info' ) return true
+      else return false
+   })
    
    const dropDown = ref(false)
 </script>

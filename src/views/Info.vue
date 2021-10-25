@@ -28,7 +28,7 @@
                <h1 class="font-bold">{{ article.title.toUpperCase() }}</h1>
                <p class="mt-2 font-light">{{ article.date }}</p>
                <p class="mt-4 mb-5 font-medium">{{ article.description }}</p>
-               <router-link to="" class="text-chatams">Read more</router-link>
+               <router-link to="/artikel" class="text-chatams">Read more</router-link>
             </div>
          </div>
       </template>
