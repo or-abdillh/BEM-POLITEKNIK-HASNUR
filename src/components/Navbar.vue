@@ -10,7 +10,7 @@
         </div>
         
         <!-- Nav -->
-        <ul class="w-7/12 flex justify-between">
+        <ul class="w-7/12 flex justify-between items-stretch">
            <li class="link">
               <router-link :to="{ name: 'home' }">Beranda</router-link>
            </li>
