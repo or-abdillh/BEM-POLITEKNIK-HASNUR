@@ -1,10 +1,7 @@
 <style scoped>
-   img {
-      z-index: -99;
-   }
    
    .slide-wrapper {
-      height: 40%;
+      height: 40vh;
    }
    
    @media screen(lg) {
