@@ -4,7 +4,7 @@
    }
    
    .slide-wrapper {
-      height: 40vh;
+      height: 40%;
    }
    
    @media screen(lg) {
@@ -18,7 +18,7 @@
 
 <template>
    <!-- splidejs -->
-   <section class="px-1 mt-20 lg:mt-10">
+   <section class="px-1 mt-32 lg:mt-16">
       <Splide :options="options">
          <SplideSlide class="slide-wrapper lg:h-screen relative">
             <slot name="slide-1"></slot>
