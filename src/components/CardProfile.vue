@@ -1,7 +1,7 @@
 <template>
    <section class="card">
-      <div class="card-header" :class="profile.nama === 'Ari Firtana' ? 'relative' : ''">
-         <img class="w-8/12" :class="profile.nama === 'Ari Firtana' ? 'absolute right-0 bottom-0' : ''" :src="profile.image" alt="" />   
+      <div class="card-header">
+         <img class="w-8/12 mt-3" :src="profile.image" alt="" />   
       </div>
       <div class="card-footer">
          <div class="profile-btn">{{ profile.jabatan }}</div>
@@ -18,9 +18,9 @@
    }
    
    .card-header {
-      @apply w-full px-1 pt-3 flex items-end justify-center rounded-xl shadow;
+      @apply w-full px-1 flex items-end justify-center rounded-xl shadow-xl;
       background: var(--sunset-orange);
-      min-height: 300px;
+      min-height: 350px;
    }
    
    .card-footer {
@@ -28,7 +28,7 @@
    }
    
    .profile-btn {
-      @apply text-sm font-medium text-center py-2 px-1 rounded-xl shadow text-gray-50 w-full;
+      @apply text-sm font-medium shadow-xl text-center py-2 px-1 rounded-xl text-gray-50 w-full;
       background: var(--chatams-blue);
    }
 </style>
