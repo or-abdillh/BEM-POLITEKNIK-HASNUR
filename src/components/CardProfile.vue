@@ -1,12 +1,12 @@
 <template>
    <section class="card">
-      <div class="card-header">
-         <img class="w-8/12 mt-3" :src="profile.image" alt="" />   
+      <div class="card-header" :class="profile.nama === 'Ari Firtana' ? 'justify-end' : 'justify-center'">
+         <img class="w-8/12 mt-5" :src="profile.image" alt="" />   
       </div>
       <div class="card-footer">
          <div class="profile-btn">{{ profile.jabatan }}</div>
-         <p class="mt-4 text-chatams font-semibold text-center">{{ profile.nama }}</p>
-         <p class="text-chatams font-sm text-center">{{ profile.prodi }} {{ profile.angkatan }}</p>
+         <p class="mt-4 text-chatams font-semibold ">{{ profile.nama }}</p>
+         <p class="text-chatams font-sm ">{{ profile.prodi }} {{ profile.angkatan }}</p>
       </div>
    </section>
 </template>
@@ -18,13 +18,12 @@
    }
    
    .card-header {
-      @apply w-full px-1 flex items-end justify-center rounded-xl shadow-xl;
+      @apply w-full px-1 flex items-end rounded-xl shadow-xl;
       background: var(--sunset-orange);
-      min-height: 350px;
    }
    
    .card-footer {
-      @apply w-full mt-3;
+      @apply w-full mt-3 text-center;
    }
    
    .profile-btn {

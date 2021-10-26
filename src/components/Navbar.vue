@@ -20,10 +20,10 @@
                   <i class="fa duration-300" :class="dropDown ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                </small>
                <ul v-if="dropDown" class="dropdown bg-chatams">
-                  <li class="py-0 mb-3">
+                  <li class="py-0 mb-3 cursor-pointer">
                      <p @click="push('tentang')">BEM Polihasnur</p>
                   </li>
-                  <li class="py-0 mb-2">
+                  <li class="py-0 mb-2 cursor-pointer">
                      <p @click="push('struktur')">Struktur Anggota</p>
                   </li>
                </ul>
