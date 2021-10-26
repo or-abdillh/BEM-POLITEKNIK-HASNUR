@@ -74,22 +74,8 @@
    import Title from '../components/Title.vue'
    import Footer from '../components/Footer.vue'
    
-   import { ref } from 'vue'
-   
-   const misi = ref([
-      "Menyelenggarakan keorganisasian yang berpacu pada keimanan dan ketakwaan terhadap Tuhan YME.",
-      "Meningkatkan kinerja anggota BEM Polihasnur  dengan membangun komunikasi dan manajemen yang baik dalam ruang lingkup kekeluargaan.",
-      "Menjunjung tinggi almamater dalam berbagai kehidupan kemahasiswaan dan kehidupan bermasyarakat.",
-      "Meningkatkan mutu serta pengelolaan Unit Kegiatan Mahasiswa dan organisasi-organisasi yang ada di Politeknik Hasnur untuk mengembangkan Soft Skill mahasiswa.",
-      "Mengemban aspirasi mahasiswa Politeknik Hasnur dalam menciptakan kondisi kampus yang demokratis.",
-      "Menampung dan menyalurkan aspirasi serta kepedulian mahasiswa terhadap persoalan -persoalan sosial kemasyarakatan."
-   ])
+   //Import content
+   import artiLambang from '../json/artiLambang.js'
+   import misi from '../json/misi.js'
     
-   const artiLambang = ref([
-      "Padi dan Kapas melambangkan kesejahteraan dan kenyamanan, diharapkan BEM Polihasnur dapat memberikan kesejahteraan dan keamanan serta menjadi wadah bagi seluruh aspirasi para mahasiswa Politeknik Hasnur.",
-      "Bentuk perisai pada logo melambangkan BEM Polihasnur merupakan sebuah organisasi yang kuat dan dapat bertahan dalam kondisi sesulit apapun.",
-      "Warna abu-abu pada kata BEM mempunyai arti profesionalitas, kepandaian, dan keseriusan.",
-      "Warna kuning mempunyai arti energi sosial, kerjasama dan loyalitas.",
-      "Bola dunia melambangkan Perguruan Tinggi Politeknik Hasnur yang dalam beberapa tahun ke depan akan menjadi pusat pendidikan terapan yang unggul di tingkat nasional dan internasional."
-   ])
 </script>
