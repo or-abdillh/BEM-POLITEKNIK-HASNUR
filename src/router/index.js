@@ -5,6 +5,7 @@ import Info from '../views/Info.vue'
 import ContactUs from '../views/ContactUs.vue'
 import Article from '../views/Article.vue'
 import About from '../views/About.vue'
+import Structure from '../views/Structure.vue'
 
 const routes = [
 	{
@@ -36,6 +37,11 @@ const routes = [
 	   path: '/tentang',
 	   name: 'tentang',
 	   component: About
+	},
+	{
+	   path: '/struktur',
+	   name: 'struktur',
+	   component: Structure
 	}
 ]
 //createRouter

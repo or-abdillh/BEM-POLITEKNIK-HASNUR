@@ -15,16 +15,16 @@
               <router-link :to="{ name: 'home' }">Beranda</router-link>
            </li>
            <li class="link relative" :class="dropDown ? 'bg-chatams' : ''">
-              <small :class="dropDown ? 'text-gray-50' : ''" @click="dropDown = !dropDown" class="flex items-center gap-2">
+              <small :class="dropDown ? 'text-gray-50' : '', dropDown ? 'none-underline' : ''" @click="dropDown = !dropDown" class="flex items-center gap-2">
                   <p :class="isTentangRoute ? 'router-link-active' : ''">Tentang</p>
                   <i class="fa duration-300" :class="dropDown ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                </small>
                <ul v-if="dropDown" class="dropdown bg-chatams">
                   <li class="py-0 mb-3">
-                     <router-link :to="{ name: 'tentang' }">BEM Polihasnur</router-link>
+                     <p @click="push('tentang')">BEM Polihasnur</p>
                   </li>
                   <li class="py-0 mb-2">
-                     <router-link to="">Struktur Anggota</router-link>
+                     <p @click="push('struktur')">Struktur Anggota</p>
                   </li>
                </ul>
            </li>
@@ -75,15 +75,20 @@
       text-decoration: none!important;
    }
    
+   .none-underline .router-link-active {
+      text-decoration: none!important;
+   }
+   
    .text-xxs {
       text-decoration: underline white;
       text-underline-offset: 5px;
    }
    
    .dropdown {
-      @apply duration-300 absolute left-0 right-0 top-full rounded py-2 px-3 text-gray-50 text-sm text-xxs;
+      @apply duration-300 absolute left-0 right-0 top-full py-3 pl-5 text-gray-50;
       transform: translateY(-5px);
-      width: 150%;
+      width: 180%;
+      user-select: none;
    }
 
 </style>
@@ -91,10 +96,11 @@
 <script setup>
 
    import { ref, computed } from 'vue'
-   import { useRoute } from 'vue-router'
+   import { useRoute, useRouter } from 'vue-router'
    
-   //Init route
+   //Init route & router
    const route = useRoute()
+   const router = useRouter()
    
    //Get current route name
    const currentRoute = computed(() => route.name)
@@ -111,5 +117,13 @@
       else return false
    })
    
+   //Dropdown action
    const dropDown = ref(false)
+   
+   //Handler for push router
+   const push = path => {
+      setTimeout(() => {
+         router.push({ name: path })
+      }, 500)
+   }
 </script>
