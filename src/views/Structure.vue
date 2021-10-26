@@ -37,5 +37,8 @@
    import CardProfile from '../components/CardProfile.vue'
    import Title from '../components/Title.vue'
    import Footer from '../components/Footer.vue'
-   import BEM from '../json/BEM.js'
+   
+   //Import contents
+   import BEM from '../contents/BEM.js'
+   import fungsionaris from '../contents/fungsionaris.js'
 </script>

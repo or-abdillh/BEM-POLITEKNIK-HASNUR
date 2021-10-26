@@ -26,6 +26,18 @@
          <SplideSlide class="slide-wrapper">
             <slot name="slide-3"></slot>
          </SplideSlide>
+         
+         <!-- Controls -->
+         <template #after-track>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+               <i class="fa fa-chevron-left text-2xl text-sunset"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+               <i class="fa fa-chevron-right text-2xl text-sunset"></i>
+            </button>
+          </div>
+        </template>
       </Splide>
    </section>
 </template>

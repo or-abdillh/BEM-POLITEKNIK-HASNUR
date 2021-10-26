@@ -75,7 +75,7 @@
    import Footer from '../components/Footer.vue'
    
    //Import content
-   import artiLambang from '../json/artiLambang.js'
-   import misi from '../json/misi.js'
+   import artiLambang from '../contents/artiLambang.js'
+   import misi from '../contents/misi.js'
     
 </script>
