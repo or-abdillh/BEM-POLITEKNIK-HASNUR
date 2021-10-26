@@ -18,7 +18,7 @@
    }
    
    .card-header {
-      @apply w-full px-1 flex items-end rounded-xl shadow-xl;
+      @apply w-full overflow-hidden flex items-end rounded-xl shadow-xl;
       background: var(--sunset-orange);
    }
    
