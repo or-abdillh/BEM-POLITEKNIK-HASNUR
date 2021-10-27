@@ -16,7 +16,7 @@
            </li>
            <li class="link relative" :class="dropDown ? 'bg-chatams' : ''">
               <small :class="dropDown ? 'text-gray-50' : '', dropDown ? 'none-underline' : ''" @click="dropDown = !dropDown" class="flex items-center gap-2">
-                  <p :class="isTentangRoute ? 'router-link-active' : ''">Tentang</p>
+                  <p class="text-lg" :class="isTentangRoute ? 'router-link-active' : ''">Tentang</p>
                   <i class="fa duration-300" :class="dropDown ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                </small>
                <ul v-if="dropDown" class="dropdown bg-chatams">
