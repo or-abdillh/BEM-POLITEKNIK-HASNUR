@@ -22,7 +22,7 @@
    <section class="w-full px-20 mt-10">
       <template v-for="(article, index) in articles" :key="index">
          <!-- Card -->
-         <div class="flex justify-center items-center gap-10 mb-20">
+         <div class="flex justify-center items-start gap-10 mb-20">
             <img :src="article.poster" class="w-5/12 rounded-3xl shadow" />
             <div class="text-chatams">
                <h1 class="font-bold">{{ article.title.toUpperCase() }}</h1>

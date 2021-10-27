@@ -19,7 +19,7 @@
             <h1 class="text-5xl text-chatams text-color-1 font-bold">Kamu mau curhat?</h1>
             <p class="text-3xl text-sunset mt-4 text-color-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
          </div>
-         <img class="z-10 absolute top-0 left-0 right-0 w-full" src="/caraousel-3.png" alt="Sample 1">
+         <img class="z-10 absolute -bottom-44 left-0 right-0 w-full" src="/caraousel-3.png" alt="Sample 1">
       </template>
    </Carousel>
    

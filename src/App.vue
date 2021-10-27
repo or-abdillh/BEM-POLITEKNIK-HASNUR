@@ -1,6 +1,8 @@
 <template>
-   <Navbar></Navbar>
-   <router-view></router-view>
+   <main class="pt-6">
+      <Navbar></Navbar>
+      <router-view></router-view>
+   </main>
 </template>
 
 <script setup>

@@ -48,7 +48,7 @@
    }
    
    .navbar-brand {
-      @apply flex gap-5 items-center py-10;
+      @apply flex gap-5 items-center my-10;
    }
    
    /* Nav Active */
