@@ -35,7 +35,7 @@
    <!-- Artikel lainnya -->
    <section class="px-16 mb-10">
       <div class="flex items-center justify-between">
-         <h1 class="text-5xl font-black">Artikel lainnya</h1>
+         <h1 class="text-5xl text-chatams font-bold">Artikel lainnya</h1>
          <hr class="line-singgle" />
       </div>
       <!-- Articles -->
