@@ -6,7 +6,7 @@
             </template>
         </Title>
         <div class="text-center">
-            <p class="text-chatams text-xl font-semibold">
+            <p class="text-chatams text-2xl font-semibold">
                Video terbaru akan selalu kami upload di kanal YouTube kami!
             </p>
             <div class="flex justify-center mt-16">

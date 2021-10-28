@@ -57,20 +57,18 @@
    import Products from '../components/Products.vue'
    import Footer from '../components/Footer.vue'
    
-   import { ref } from 'vue'
-
-    const sosmedNum = ref([
-        {
-            num: 49,
-            title: 'Subscriber'
-        },
-        {
-            num: 1299,
-            title: 'Followers'
-        },
-        {
-            num: 30,
-            title: 'Agenda'
-        }
-    ])
+   const sosmedNum = [
+      {
+         num: 49,
+         title: 'Subscriber'
+      },
+      {
+         num: 1299,
+         title: 'Followers'
+      },
+      {
+         num: 30,
+         title: 'Agenda'
+      }
+   ]
 </script>

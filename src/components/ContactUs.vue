@@ -11,7 +11,9 @@
             </p>
             <img class="mx-auto mt-20" src="/contact-us.png" alt="">
             <CTA>
-               <template v-slot:cta-title>Ceritakan masalahmu disini</template>
+               <template v-slot:cta-title>
+                  <router-link :to="{ name: 'contactUs' }">Ceritakan masalahmu disini</router-link>
+               </template>
             </CTA>
         </div>
     </section>
