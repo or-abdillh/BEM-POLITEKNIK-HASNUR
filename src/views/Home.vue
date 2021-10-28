@@ -5,7 +5,7 @@
             <h1 class="text-5xl text-chatams text-color-1 font-bold">Selamat datang di Website <br> BEM POLIHASNUR!</h1>
             <p class="text-3xl text-sunset mt-4 text-color-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
          </div>
-         <img class="z-10 absolute lg:-bottom-10 right-0 bottom-0 w-7/12 lg:w-6" src="/caraousel-1.png" alt="caraousel-1">
+         <img class="z-10 absolute lg:-bottom-10 right-0 bottom-0 w-7/12 lg:w-6/12" src="/caraousel-1.png" alt="caraousel-1">
       </template>
       <template v-slot:slide-2>
          <div class="slide z-20">
