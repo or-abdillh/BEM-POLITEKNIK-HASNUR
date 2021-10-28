@@ -10,7 +10,7 @@
          <h1>Visi</h1>
       </template>
    </Title>
-   <p class="show mb-5 text-chatams text-xl font-semibold px-20 text-center">
+   <p class="show mb-5 text-chatams text-2xl font-semibold px-20 text-center">
       Mewujudkan BEM Polihasnur sebagai lembaga yang berjiwa kebersamaan serta melahirkan kader-kader banua yang memiliki Imtaq dan Iptek yang selaras.
    </p>
    
@@ -22,7 +22,7 @@
    </Title>
    <section class="px-16 justify-between gap-2 flex flex-wrap">
       <template v-for="(misi, index) in misi" :key="index">
-         <div class="w-3/12 mb-16">
+         <div class="show w-3/12 mb-16">
             <div class="text-chatams mb-5 flex gap-1 items-end">
                <h1 class="text-4xl font-semibold underline-cstm">0{{ index + 1 }}</h1>
                <i class="fa fa-circle text-xs"></i>
@@ -40,10 +40,10 @@
          <h1>Filosofi Logo</h1>
       </template>
    </Title>
-   <img src="/BEM.jpg" class="mx-auto w-5/12" alt="" />
+   <img src="/BEM.jpg" class="show mx-auto w-5/12" alt="" />
     <section class="px-16 mt-10 justify-between gap-2 flex flex-wrap">
       <template v-for="(text, index) in artiLambang" :key="index">
-         <div class="w-3/12 mb-16">
+         <div class="show w-3/12 mb-16">
             <div class="text-chatams mb-5 flex gap-1 items-end">
                <h1 class="text-4xl font-semibold underline-cstm">0{{ index + 1 }}</h1>
                <i class="fa fa-circle text-xs"></i>
@@ -55,6 +55,27 @@
       </template> 
       <div class="w-3/12"></div>
    </section>
+   
+   <!-- Mars BEM Polihasnur -->
+   <Title>
+      <template v-slot:title>
+         Mars BEM Polihasnur
+      </template>
+   </Title>
+   
+   <!-- Embed -->
+   <iframe class="show mx-auto mb-10" width="600" height="315" src="https://www.youtube.com/embed/4Est2UU68pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+   <section class="w-10/12 mx-auto mb-5">
+      <template v-for="(lirik, index) in mars" :key="index">
+         <div class="show mb-5 font-medium text-center text-chatams text-2xl">
+            <template v-for="(bait, index) in lirik" :key="index">
+               <p>{{ bait }}</p>
+            </template>
+         </div>
+      </template>
+   </section>
+   
    <Footer></Footer>
 </template>
 
@@ -77,5 +98,6 @@
    //Import content
    import artiLambang from '../contents/artiLambang.js'
    import misi from '../contents/misi.js'
+   import mars from '../contents/mars.js'
     
 </script>

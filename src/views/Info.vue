@@ -5,24 +5,24 @@
    </Cover>
    <Calendar>
       <template v-slot:sub-title>
-         <p class="mb-5 text-chatams text-xl font-semibold px-20 text-center">
+         <p class="show mb-5 text-chatams text-xl font-semibold px-20 text-center">
             Jangan sampai kelewatan event - event dari kami!
          </p>
       </template>
    </Calendar>
    <Title>
       <template v-slot:title>
-         <h1>Artikel</h1>
+         <h1 class="show">Artikel</h1>
       </template>
    </Title>
-   <p class="mb-5 text-chatams text-xl font-semibold px-20 text-center">
+   <p class="show mb-5 text-chatams text-xl font-semibold px-20 text-center">
       Seputar informasi tentang kampus Politeknik Hasnur   
    </p>
    <!-- Articles -->
    <section class="w-full px-20 mt-10">
       <template v-for="(article, index) in articles" :key="index">
          <!-- Card -->
-         <div class="flex justify-center items-start gap-10 mb-20">
+         <div class="show flex justify-center items-start gap-10 mb-20">
             <img :src="article.poster" class="w-5/12 rounded-3xl shadow" />
             <div class="text-chatams">
                <h1 class="font-bold">{{ article.title.toUpperCase() }}</h1>

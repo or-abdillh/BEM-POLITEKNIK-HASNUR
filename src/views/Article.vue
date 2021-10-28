@@ -26,7 +26,7 @@
       </template>
    </Carousel>
    <!-- Content -->
-   <section class="px-16 mt-10 mb-20">
+   <section class="show px-16 mt-10 mb-20">
       <p class="leading-relaxed text-chatams text-3xl">
          PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si., M.P. selaku direktur Politeknik Hasnur, dalam laporannya PKKMB tahun ini dilaksanakan 3 hari ini secara hybrid yaitu 1 hari online dan 2 hari offline dengan harapan untuk mencegah penularan Covid-19 dan agar kegiatan tersebut dapat berjalan dengan baik dan semaksimal mungkin.
       </p>
@@ -42,7 +42,7 @@
       <section class="w-full mt-10">
          <template v-for="(article, index) in articles" :key="index">
             <!-- Card -->
-            <div class="flex items-start gap-10">
+            <div class="show flex items-start gap-10">
                <img :src="article.poster" class="rounded-3xl shadow w-5/12 shadow mb-10" />
                <div class="">
                   <h1 class="font-bold text-chatams text-2xl">{{ article.title.toUpperCase() }}</h1>

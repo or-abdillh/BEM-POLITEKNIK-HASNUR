@@ -23,23 +23,24 @@
       </template>
    </Carousel>
    
+   <!-- About -->
    <About></About>
    <!-- MEDSOS COUNT -->
    <section class="bg-white p-20 mt-0 flex justify-between">
         <template v-for="(item, index) in sosmedNum" :key="index">
-            <div class="text-5xl text-center font-bold">
+            <div class="show text-5xl text-center font-bold">
                 <h1 class="text-sunset">{{ item.num }}</h1>
                 <h1 class="text-chatams">{{ item.title }}</h1>
             </div>
         </template>
     </section>
-   <Calendar></Calendar>
-   <Article></Article>
-   <Medsos></Medsos>
-   <ContactUs></ContactUs>
-   <LatestVideo></LatestVideo>
-   <Products></Products>
-   <Footer></Footer>
+   <Calendar class="show"></Calendar>
+   <Article class="show"></Article>
+   <Medsos class="show"></Medsos>
+   <ContactUs class="show"></ContactUs>
+   <LatestVideo class="show"></LatestVideo>
+   <Products class="show"></Products>
+   <Footer class="show"></Footer>
 </template>
 
 <script setup>
