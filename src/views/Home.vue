@@ -28,7 +28,7 @@
    <!-- About -->
    <About></About>
    <!-- MEDSOS COUNT -->
-   <section class="bg-white p-20 mt-0 flex justify-between">
+   <section class="p-20 mt-0 flex justify-between">
         <template v-for="(item, index) in sosmedNum" :key="index">
             <div class="show text-5xl text-center font-bold">
                 <h1 class="text-sunset">{{ item.num }}</h1>

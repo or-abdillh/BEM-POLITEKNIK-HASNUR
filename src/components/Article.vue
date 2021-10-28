@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-white mt-10">
+    <section class="mt-10">
         <Title>
             <template v-slot:title >
                 <h1>Artikel</h1>
