@@ -44,7 +44,7 @@
 <style scoped>
    
    .navbar {
-      @apply z-50 bg-white w-full px-10 fixed top-0 left-0 right-0 flex gap-20;
+      @apply z-50 bg-white w-full px-10 fixed top-0 left-0 right-0 flex justify-between gap-20;
    }
    
    .navbar-brand {

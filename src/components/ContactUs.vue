@@ -5,8 +5,8 @@
                 <h1>Hubungi Kami</h1>
             </template>
         </Title>
-        <div class="text-center">
-            <p class="text-chatams text-xl font-semibold">
+        <div class="text-center px-10">
+            <p class="text-2xl text-chatams font-semibold">
                Pengen curhat tapi bingung kemana? Tenang, temen - temen dari Kemendagri akan membantu semua permasalahan kamu disini!
             </p>
             <img class="mx-auto mt-20" src="/contact-us.png" alt="">

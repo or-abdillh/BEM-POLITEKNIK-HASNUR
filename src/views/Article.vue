@@ -40,14 +40,14 @@
       </div>
       <!-- Articles -->
       <section class="w-full mt-10">
-         <template v-for="(article, index) in articles" :key="index">
+         <template v-for="(article, index) in artikel" :key="index">
             <!-- Card -->
-            <div class="show flex items-start gap-10">
-               <img :src="article.poster" class="rounded-3xl shadow w-5/12 shadow mb-10" />
+            <div v-if="index > 0" class="show mb-10 flex items-start gap-10">
+               <img :src="article.poster" class="rounded-3xl shadow-cstm w-5/12 lg:w-4/12 shadow mb-10" />
                <div class="">
                   <h1 class="font-bold text-chatams text-2xl">{{ article.title.toUpperCase() }}</h1>
                   <p class="text-chatams text-xl font-light">{{ article.date }}</p>
-                  <p class="text-xl my-4 text-chatams font-medium">{{ article.description }}</p>
+                  <p class="text-2xl my-4 text-chatams font-medium">{{ article.description }}</p>
                   <router-link :to="{ name: 'artikel' }" class="text-chatams text-xl pointer">Read more...</router-link>
                </div>
             </div>
@@ -62,22 +62,5 @@
    import Footer from '../components/Footer.vue'
    import Carousel from '../components/Carousel.vue'
    import Writer from '../components/Writer.vue'
-   
-   import { ref } from 'vue'
-   
-   const articles = ref([
-         {
-            title: 'PKKMB politeknik hasnur dilaksanakan dengan lancar',
-            date: 'Rabu, 15 September 2021',
-            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
-            poster: 'article-2.jpg'
-         },
-         {
-            title: 'dokumenter PKKMB politkenik hasnur 2021',
-            date: 'Senin, 20 September 2021',
-            description: 'PKKMB Politeknik Hasnur 2021 resmi dibuka oleh ibu Linda Rahmawati, S.Si, M.P selaku direktur Politeknik Hasnur, dalam laporannya PKKMB...',
-            poster: 'article-3.jpg'
-         }
-      ])
-   
+   import artikel from '../contents/artikel.js'
 </script>

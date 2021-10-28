@@ -49,19 +49,19 @@
          <h1 class="text-3xl footer-title">Link Cepat</h1>
          <ul class="text-2xl">
             <li>
-               <router-link to="">Beranda</router-link>
+               <router-link :to="{ name: 'home' }">Beranda</router-link>
             </li>
             <li>
-               <router-link to="">Tentang</router-link>
+               <router-link :to="{ name: 'tentang' }">Tentang</router-link>
             </li>
             <li>
-               <router-link to="">Merch</router-link>
+               <router-link :to="{ name: 'merchants' }">Merch</router-link>
             </li>
             <li>
-               <router-link to="">BEM INFO</router-link>
+               <router-link :to="{ name: 'info' }">BEM INFO</router-link>
             </li>
             <li>
-               <router-link to="">Hubungi Kami</router-link>
+               <router-link class="pointer" :to="{ name: 'contactUs' }">Hubungi Kami</router-link>
             </li>
          </ul>
       </div>
@@ -71,15 +71,15 @@
          <h1 class="text-3xl footer-title">Artikel</h1>
          <ul>
             <li class="mb-4">
-               <router-link class="font-semibold" to="">Dokumenter PKKMB POLITEKNIK HASNUR 2021</router-link>
+               <router-link class="font-semibold pointer" :to="{ name: 'artikel' }">Dokumenter PKKMB POLITEKNIK HASNUR 2021</router-link>
                <p>Senin, 20 September 2021</p>
             </li>
             <li class="mb-4">
-               <router-link class="font-semibold" to="">PKKMB POLITEKNIK HASNUR DILAKSANAKAN DENGAN LANCAR</router-link>
+               <router-link class="font-semibold pointer" :to="{ name: 'artikel' }">PKKMB POLITEKNIK HASNUR DILAKSANAKAN DENGAN LANCAR</router-link>
                <p>Rabu, 15 September 2021</p>
             </li>
             <li class="mb-4">
-               <router-link class="font-semibold" to="">PKKMB POLITEKNIK HASNUR 2021 AKAN DILAKSANAKAN SECARA HYBRID</router-link>
+               <router-link class="font-semibold pointer" :to="{ name: 'artikel' }">PKKMB POLITEKNIK HASNUR 2021 AKAN DILAKSANAKAN SECARA HYBRID</router-link>
                <p>Minggu, 12 September 2021</p>
             </li>
          </ul>

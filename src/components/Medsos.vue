@@ -5,8 +5,8 @@
                 <h1>Medsos</h1>
             </template>
         </Title>
-        <div class="text-center">
-            <p class="text-chatams text-xl font-semibold">Info terbaru akan lebih update di media sosial Instagram kami ya sob!</p>
+        <div class="text-center px-10">
+            <p class="text-chatams text-2xl font-semibold">Info terbaru akan lebih update di media sosial Instagram kami ya sob!</p>
             <img class="mx-auto mt-20" src="/phone.png" alt="">
             <CTA>
                <template v-slot:cta-title>Kunjungi instagram kami disini</template>

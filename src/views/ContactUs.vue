@@ -7,7 +7,7 @@
          <h1>Hubungi Kami</h1>
       </template>
    </Title>
-   <p v-if="!isSuccess" class="show mb-5 text-chatams text-xl font-semibold px-20 text-center">
+   <p v-if="!isSuccess" class="show mb-5 text-chatams text-2xl font-semibold px-20 text-center">
       Silahkan isi pertanyaan kamu disini ya temen - temen!
    </p>
    <!-- Form wrapper -->
