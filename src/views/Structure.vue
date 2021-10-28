@@ -40,6 +40,14 @@
       </template>
    </section>
    
+   <div class="text-chatams text-2xl text-center font-medium w-10/12 mx-auto">
+      <p>Dilantik pada tanggal : 21 Desember 2021</p>
+      <p>Jumlah Kepengurusan: 29 Anggota</p>
+      <template v-for="circle in 3">
+         <i class="fa fa-circle text-sunset mr-4 my-5"></i>
+      </template>
+   </div>
+   
    <Footer></Footer>
 </template>
 
