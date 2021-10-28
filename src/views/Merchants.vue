@@ -16,7 +16,7 @@
       <template v-for="(merch, index) in merchants" :key="index">
          <!-- Card -->
          <div class="w-5/12">
-            <div class="rounded-2xl shadow-lg relative overflow-hidden">
+            <div class="rounded-2xl shadow-cstm relative overflow-hidden">
                <img :src="merch.img" class="w-full" :alt="merch.title" />
                <div class="bg-gray-900 text-center text-xl font-semibold text-gray-50 layer absolute left-0 bg-opacity-50 right-0 bottom-0 py-3 px-2">
                   BEM POLITEKNIK HASNUR {{ merch.title }}
@@ -28,6 +28,9 @@
             </button>
          </div>
       </template>
+      <CTA>
+         <template v-slot:cta-title>Kunjungi Shoppee kami disini!</template>
+      </CTA>
    </section>
    <Footer></Footer>
 </template>
@@ -36,6 +39,7 @@
    import Footer from '../components/Footer.vue'
    import Title from '../components/Title.vue'
    import Cover from '../components/Cover.vue'
+   import CTA from '../components/CTA.vue'
    
    import { ref } from 'vue'
    const merchants = ref([

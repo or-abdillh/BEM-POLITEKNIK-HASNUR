@@ -48,7 +48,7 @@
                   <h1 class="font-bold text-chatams text-2xl">{{ article.title.toUpperCase() }}</h1>
                   <p class="text-chatams text-xl font-light">{{ article.date }}</p>
                   <p class="text-xl my-4 text-chatams font-medium">{{ article.description }}</p>
-                  <router-link :to="{ name: 'artikel' }" class="text-chatams text-xl">Read more</router-link>
+                  <router-link :to="{ name: 'artikel' }" class="text-chatams text-xl pointer">Read more...</router-link>
                </div>
             </div>
          </template>

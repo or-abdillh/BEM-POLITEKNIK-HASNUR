@@ -8,8 +8,11 @@
 * {
    margin: 0;
    padding: 0;
-   
    font-family: "Poppins", Sans-Serif;
+}
+
+.shadow-cstm {
+   box-shadow: 4px 4px 1px rgba(0,0,0,.2);
 }
 
 .line {
@@ -45,6 +48,7 @@
    @apply w-10/12 top-3/4 absolute left-20
 }
 
+/* For layer carousel articles */
 .layer-slide {
    @apply absolute bg-opacity-25 inset-0;
    background-image: linear-gradient(

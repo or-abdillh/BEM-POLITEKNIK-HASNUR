@@ -1,5 +1,5 @@
 <template>
-   <section class="mt-36 lg:mt-18 relative">
+   <section class="mt-24 lg:mt-12 relative">
       <img class="w-full" :src="img" />
       <div class="bg-gray-900 absolute inset-0 bg-opacity-50 flex items-center justify-center">
          <div class="text-white text-center">

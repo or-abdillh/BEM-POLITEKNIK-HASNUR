@@ -20,7 +20,7 @@
                <template v-for="(merch, index) in merchants" :key="index">
                   <!-- Card -->
                   <div>
-                     <div class="rounded-2xl shadow-lg relative overflow-hidden">
+                     <div class="shadow-cstm rounded-2xl relative overflow-hidden">
                         <img :src="merch.img" class="w-full" :alt="merch.title" />
                         <div class="bg-gray-900 font-semibold text-gray-50 layer absolute left-0 bg-opacity-50 right-0 bottom-0 py-3 px-2">
                            BEM POLITEKNIK HASNUR {{ merch.title }}
